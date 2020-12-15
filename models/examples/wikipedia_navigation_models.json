@@ -1,0 +1,205 @@
+{
+	"name": "Wikipedia Navigation Example Models",
+	"models": [
+		{
+			"name": "wikipedia_navigation",
+			"generator": "quick_random(edge_coverage(100) && vertex_coverage(100))",
+			"startElementId": "v3",
+			"vertices": [
+				{
+					"id": "v3",
+					"name": "v_wikipedia_main",
+					"properties": {
+						"description": "http://en.wikipedia.org/wiki/Main_Page"
+					}
+				},
+				{
+					"id": "v4",
+					"name": "v_about",
+					"properties": {
+						"description": "http://en.wikipedia.org/wiki/Wikipedia:About"
+					}
+				},
+				{
+					"id": "v5",
+					"name": "v_portal_contents",
+					"properties": {
+						"description": "http://en.wikipedia.org/wiki/Portal:Contents"
+					}
+				},
+				{
+					"id": "v6",
+					"name": "v_community_portal",
+					"properties": {
+						"description": "http://en.wikipedia.org/wiki/Wikipedia:Community_Portal"
+					}
+				},
+				{
+					"id": "v7",
+					"name": "v_recent_changes",
+					"properties": {
+						"description": "http://en.wikipedia.org/wiki/Special:Recentchanges"
+					}
+				}
+			],
+			"edges": [
+				{
+					"id": "e2",
+					"name": "e_main",
+					"sourceVertexId": "v3",
+					"targetVertexId": "v3"
+				},
+				{
+					"id": "e3",
+					"name": "e_about",
+					"sourceVertexId": "v3",
+					"targetVertexId": "v4"
+				},
+				{
+					"id": "e4",
+					"name": "e_main",
+					"sourceVertexId": "v4",
+					"targetVertexId": "v3"
+				},
+				{
+					"id": "e5",
+					"name": "e_about",
+					"sourceVertexId": "v4",
+					"targetVertexId": "v4"
+				},
+				{
+					"id": "e6",
+					"name": "e_portal",
+					"sourceVertexId": "v3",
+					"targetVertexId": "v5"
+				},
+				{
+					"id": "e7",
+					"name": "e_portal",
+					"sourceVertexId": "v4",
+					"targetVertexId": "v5"
+				},
+				{
+					"id": "e8",
+					"name": "e_main",
+					"sourceVertexId": "v5",
+					"targetVertexId": "v3"
+				},
+				{
+					"id": "e9",
+					"name": "e_portal",
+					"sourceVertexId": "v5",
+					"targetVertexId": "v5"
+				},
+				{
+					"id": "e10",
+					"name": "e_about",
+					"sourceVertexId": "v5",
+					"targetVertexId": "v4"
+				},
+				{
+					"id": "e11",
+					"name": "e_community",
+					"sourceVertexId": "v3",
+					"targetVertexId": "v6"
+				},
+				{
+					"id": "e12",
+					"name": "e_community",
+					"sourceVertexId": "v6",
+					"targetVertexId": "v6"
+				},
+				{
+					"id": "e13",
+					"name": "e_main",
+					"sourceVertexId": "v6",
+					"targetVertexId": "v3"
+				},
+				{
+					"id": "e14",
+					"name": "e_portal",
+					"sourceVertexId": "v6",
+					"targetVertexId": "v5"
+				},
+				{
+					"id": "e15",
+					"name": "e_portal",
+					"sourceVertexId": "v3",
+					"targetVertexId": "v5"
+				},
+				{
+					"id": "e16",
+					"name": "e_about",
+					"sourceVertexId": "v5",
+					"targetVertexId": "v4"
+				},
+				{
+					"id": "e17",
+					"name": "e_community",
+					"sourceVertexId": "v5",
+					"targetVertexId": "v6"
+				},
+				{
+					"id": "e18",
+					"name": "e_community",
+					"sourceVertexId": "v4",
+					"targetVertexId": "v6"
+				},
+				{
+					"id": "e20",
+					"name": "e_recent",
+					"sourceVertexId": "v7",
+					"targetVertexId": "v7"
+				},
+				{
+					"id": "e22",
+					"name": "e_portal",
+					"sourceVertexId": "v7",
+					"targetVertexId": "v5"
+				},
+				{
+					"id": "e23",
+					"name": "e_about",
+					"sourceVertexId": "v7",
+					"targetVertexId": "v4"
+				},
+				{
+					"id": "e24",
+					"name": "e_main",
+					"sourceVertexId": "v7",
+					"targetVertexId": "v3"
+				},
+				{
+					"id": "e25",
+					"name": "e_community",
+					"sourceVertexId": "v7",
+					"targetVertexId": "v6"
+				},
+				{
+					"id": "e26",
+					"name": "e_recent",
+					"sourceVertexId": "v3",
+					"targetVertexId": "v7"
+				},
+				{
+					"id": "e19",
+					"name": "e_recent",
+					"sourceVertexId": "v4",
+					"targetVertexId": "v7"
+				},
+				{
+					"id": "e27",
+					"name": "e_recent",
+					"sourceVertexId": "v5",
+					"targetVertexId": "v7"
+				},
+				{
+					"id": "e21",
+					"name": "e_recent",
+					"sourceVertexId": "v6",
+					"targetVertexId": "v7"
+				}
+			]
+		}
+	]
+}
