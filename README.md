@@ -52,7 +52,7 @@ Press Control+C to end...
 ## Display the Ruby Test Generator Help message
 
 ```bash
-ruby_test_generator.rb --help
+./ruby_test_generator.rb --help
 Usage: ruby_test_generator.rb {options}
 
     -j, --json [JSON]                {optional} Path to the JSON model file to be loaded into GraphWalker (.json)
@@ -160,27 +160,325 @@ To load a model into GraphWalker REST service, and execute a Ruby model class, r
 Output may look like the following:
 
 ```bash
-TBD
+Test Generator is using GraphWalker REST API at http://localhost:8887/graphwalker.
+Test Generator has loaded a JSON model into GraphWalker.
+GraphWalker is starting its walk.
+ELEMENT: v_wikipedia_main
+PENDING: Element method not implemented.
+ELEMENT: e_about
+PENDING: Element method not implemented.
+ELEMENT: v_about
+PENDING: Element method not implemented.
+ELEMENT: e_about
+PENDING: Element method not implemented.
+ELEMENT: v_about
+PENDING: Element method not implemented.
+ELEMENT: e_recent
+PENDING: Element method not implemented.
+ELEMENT: v_recent_changes
+PENDING: Element method not implemented.
+ELEMENT: e_community
+PENDING: Element method not implemented.
+ELEMENT: v_community_portal
+PENDING: Element method not implemented.
+ELEMENT: e_main
+PENDING: Element method not implemented.
+ELEMENT: v_wikipedia_main
+PENDING: Element method not implemented.
+ELEMENT: e_about
+PENDING: Element method not implemented.
+ELEMENT: v_about
+PENDING: Element method not implemented.
+ELEMENT: e_community
+PENDING: Element method not implemented.
+ELEMENT: v_community_portal
+PENDING: Element method not implemented.
+ELEMENT: e_portal
+PENDING: Element method not implemented.
+ELEMENT: v_portal_contents
+PENDING: Element method not implemented.
+ELEMENT: e_about
+PENDING: Element method not implemented.
+ELEMENT: v_about
+PENDING: Element method not implemented.
+ELEMENT: e_portal
+PENDING: Element method not implemented.
+ELEMENT: v_portal_contents
+PENDING: Element method not implemented.
+ELEMENT: e_recent
+PENDING: Element method not implemented.
+ELEMENT: v_recent_changes
+PENDING: Element method not implemented.
+ELEMENT: e_recent
+PENDING: Element method not implemented.
+ELEMENT: v_recent_changes
+PENDING: Element method not implemented.
+ELEMENT: e_about
+PENDING: Element method not implemented.
+ELEMENT: v_about
+PENDING: Element method not implemented.
+ELEMENT: e_recent
+PENDING: Element method not implemented.
+ELEMENT: v_recent_changes
+PENDING: Element method not implemented.
+ELEMENT: e_portal
+PENDING: Element method not implemented.
+ELEMENT: v_portal_contents
+PENDING: Element method not implemented.
+ELEMENT: e_main
+PENDING: Element method not implemented.
+ELEMENT: v_wikipedia_main
+PENDING: Element method not implemented.
+ELEMENT: e_portal
+PENDING: Element method not implemented.
+ELEMENT: v_portal_contents
+PENDING: Element method not implemented.
+ELEMENT: e_main
+PENDING: Element method not implemented.
+ELEMENT: v_wikipedia_main
+PENDING: Element method not implemented.
+ELEMENT: e_portal
+PENDING: Element method not implemented.
+ELEMENT: v_portal_contents
+PENDING: Element method not implemented.
+ELEMENT: e_main
+PENDING: Element method not implemented.
+ELEMENT: v_wikipedia_main
+PENDING: Element method not implemented.
+ELEMENT: e_community
+PENDING: Element method not implemented.
+ELEMENT: v_community_portal
+PENDING: Element method not implemented.
+ELEMENT: e_portal
+PENDING: Element method not implemented.
+ELEMENT: v_portal_contents
+PENDING: Element method not implemented.
+ELEMENT: e_portal
+PENDING: Element method not implemented.
+ELEMENT: v_portal_contents
+PENDING: Element method not implemented.
+ELEMENT: e_main
+PENDING: Element method not implemented.
+ELEMENT: v_wikipedia_main
+PENDING: Element method not implemented.
+ELEMENT: e_main
+PENDING: Element method not implemented.
+ELEMENT: v_wikipedia_main
+PENDING: Element method not implemented.
+ELEMENT: e_recent
+PENDING: Element method not implemented.
+ELEMENT: v_recent_changes
+PENDING: Element method not implemented.
+ELEMENT: e_portal
+PENDING: Element method not implemented.
+ELEMENT: v_portal_contents
+PENDING: Element method not implemented.
+ELEMENT: e_community
+PENDING: Element method not implemented.
+ELEMENT: v_community_portal
+PENDING: Element method not implemented.
+ELEMENT: e_community
+PENDING: Element method not implemented.
+ELEMENT: v_community_portal
+PENDING: Element method not implemented.
+ELEMENT: e_portal
+PENDING: Element method not implemented.
+ELEMENT: v_portal_contents
+PENDING: Element method not implemented.
+ELEMENT: e_about
+PENDING: Element method not implemented.
+ELEMENT: v_about
+PENDING: Element method not implemented.
+ELEMENT: e_community
+PENDING: Element method not implemented.
+ELEMENT: v_community_portal
+PENDING: Element method not implemented.
+ELEMENT: e_recent
+PENDING: Element method not implemented.
+ELEMENT: v_recent_changes
+PENDING: Element method not implemented.
+ELEMENT: e_main
+PENDING: Element method not implemented.
+ELEMENT: v_wikipedia_main
+PENDING: Element method not implemented.
+ELEMENT: e_about
+PENDING: Element method not implemented.
+ELEMENT: v_about
+PENDING: Element method not implemented.
+ELEMENT: e_main
+PENDING: Element method not implemented.
+GraphWalker reached 100% edge coverage. Congratulations!
+GraphWalker walked that model in: 72 steps in 0.6144037246704102 seconds.
+Saved the walk to the file: /tmp/walk-1608066918.wlk
+
 ```
 
 ## Execute a Ruby model class from the sequence in a previously saved walk file
 
-To re-execute a Ruby model class, with a previously saved walk sequence, run the following command.
+To re-execute a Ruby model class, with a previously saved walk sequence, run the following command. Note that the walk file name id randomly generated based on time, so yours will be different.
 
 ```bash
-./ruby_test_generator.rb --walk /tmp/TBD.wlk --ruby models/examples/model_example_wikipedia.rb
+./ruby_test_generator.rb --walk /tmp/walk-1608066918.wlk --ruby models/examples/wikipedia_navigation_models.rb
 ```
 
 Output may look like the following:
 
 ```bash
-TBD
+Test Generator has started to replay the walk file /tmp/walk-1608066918.wlk.
+ELEMENT: v_wikipedia_main
+PENDING: Element method not implemented.
+ELEMENT: e_about
+PENDING: Element method not implemented.
+ELEMENT: v_about
+PENDING: Element method not implemented.
+ELEMENT: e_about
+PENDING: Element method not implemented.
+ELEMENT: v_about
+PENDING: Element method not implemented.
+ELEMENT: e_recent
+PENDING: Element method not implemented.
+ELEMENT: v_recent_changes
+PENDING: Element method not implemented.
+ELEMENT: e_community
+PENDING: Element method not implemented.
+ELEMENT: v_community_portal
+PENDING: Element method not implemented.
+ELEMENT: e_main
+PENDING: Element method not implemented.
+ELEMENT: v_wikipedia_main
+PENDING: Element method not implemented.
+ELEMENT: e_about
+PENDING: Element method not implemented.
+ELEMENT: v_about
+PENDING: Element method not implemented.
+ELEMENT: e_community
+PENDING: Element method not implemented.
+ELEMENT: v_community_portal
+PENDING: Element method not implemented.
+ELEMENT: e_portal
+PENDING: Element method not implemented.
+ELEMENT: v_portal_contents
+PENDING: Element method not implemented.
+ELEMENT: e_about
+PENDING: Element method not implemented.
+ELEMENT: v_about
+PENDING: Element method not implemented.
+ELEMENT: e_portal
+PENDING: Element method not implemented.
+ELEMENT: v_portal_contents
+PENDING: Element method not implemented.
+ELEMENT: e_recent
+PENDING: Element method not implemented.
+ELEMENT: v_recent_changes
+PENDING: Element method not implemented.
+ELEMENT: e_recent
+PENDING: Element method not implemented.
+ELEMENT: v_recent_changes
+PENDING: Element method not implemented.
+ELEMENT: e_about
+PENDING: Element method not implemented.
+ELEMENT: v_about
+PENDING: Element method not implemented.
+ELEMENT: e_recent
+PENDING: Element method not implemented.
+ELEMENT: v_recent_changes
+PENDING: Element method not implemented.
+ELEMENT: e_portal
+PENDING: Element method not implemented.
+ELEMENT: v_portal_contents
+PENDING: Element method not implemented.
+ELEMENT: e_main
+PENDING: Element method not implemented.
+ELEMENT: v_wikipedia_main
+PENDING: Element method not implemented.
+ELEMENT: e_portal
+PENDING: Element method not implemented.
+ELEMENT: v_portal_contents
+PENDING: Element method not implemented.
+ELEMENT: e_main
+PENDING: Element method not implemented.
+ELEMENT: v_wikipedia_main
+PENDING: Element method not implemented.
+ELEMENT: e_portal
+PENDING: Element method not implemented.
+ELEMENT: v_portal_contents
+PENDING: Element method not implemented.
+ELEMENT: e_main
+PENDING: Element method not implemented.
+ELEMENT: v_wikipedia_main
+PENDING: Element method not implemented.
+ELEMENT: e_community
+PENDING: Element method not implemented.
+ELEMENT: v_community_portal
+PENDING: Element method not implemented.
+ELEMENT: e_portal
+PENDING: Element method not implemented.
+ELEMENT: v_portal_contents
+PENDING: Element method not implemented.
+ELEMENT: e_portal
+PENDING: Element method not implemented.
+ELEMENT: v_portal_contents
+PENDING: Element method not implemented.
+ELEMENT: e_main
+PENDING: Element method not implemented.
+ELEMENT: v_wikipedia_main
+PENDING: Element method not implemented.
+ELEMENT: e_main
+PENDING: Element method not implemented.
+ELEMENT: v_wikipedia_main
+PENDING: Element method not implemented.
+ELEMENT: e_recent
+PENDING: Element method not implemented.
+ELEMENT: v_recent_changes
+PENDING: Element method not implemented.
+ELEMENT: e_portal
+PENDING: Element method not implemented.
+ELEMENT: v_portal_contents
+PENDING: Element method not implemented.
+ELEMENT: e_community
+PENDING: Element method not implemented.
+ELEMENT: v_community_portal
+PENDING: Element method not implemented.
+ELEMENT: e_community
+PENDING: Element method not implemented.
+ELEMENT: v_community_portal
+PENDING: Element method not implemented.
+ELEMENT: e_portal
+PENDING: Element method not implemented.
+ELEMENT: v_portal_contents
+PENDING: Element method not implemented.
+ELEMENT: e_about
+PENDING: Element method not implemented.
+ELEMENT: v_about
+PENDING: Element method not implemented.
+ELEMENT: e_community
+PENDING: Element method not implemented.
+ELEMENT: v_community_portal
+PENDING: Element method not implemented.
+ELEMENT: e_recent
+PENDING: Element method not implemented.
+ELEMENT: v_recent_changes
+PENDING: Element method not implemented.
+ELEMENT: e_main
+PENDING: Element method not implemented.
+ELEMENT: v_wikipedia_main
+PENDING: Element method not implemented.
+ELEMENT: e_about
+PENDING: Element method not implemented.
+ELEMENT: v_about
+PENDING: Element method not implemented.
+ELEMENT: e_main
+PENDING: Element method not implemented.
+Test Generator replayed the walk file in:  0.14868497848510742 seconds.
 ```
 
 ## Contact
-
 Ruby Test Generator was created by Chris Struble.
-TBD
+
+Github profile: https://github.com/testdruid/
+
+## Source Code
+https://github.com/testdruid/ruby-test-generator
 
 ## References
 The GraphWalker model-based testing tool, by Kristian Karl
