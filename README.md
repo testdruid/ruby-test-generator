@@ -74,8 +74,8 @@ To load a JSON model file into the GraphWalker REST service without executing a 
 Output may look like the following:
 
 ```bash
-Test Generator is using GraphWalker REST API at http://localhost:8887/graphwalker.
-Test Generator has loaded a JSON model into GraphWalker.
+Ruby Test Generator is using GraphWalker REST API at http://localhost:8887/graphwalker.
+Ruby Test Generator has loaded a JSON model into GraphWalker.
 GraphWalker is starting its walk.
 ELEMENT: v_start
 ELEMENT: e_main
@@ -164,8 +164,8 @@ To load a model into GraphWalker REST service, and execute a Ruby model class, r
 Output may look like the following:
 
 ```bash
-Test Generator is using GraphWalker REST API at http://localhost:8887/graphwalker.
-Test Generator has loaded a JSON model into GraphWalker.
+Ruby Test Generator is using GraphWalker REST API at http://localhost:8887/graphwalker.
+Ruby Test Generator has loaded a JSON model into GraphWalker.
 GraphWalker is starting its walk.
 ELEMENT: v_start
 SUCCESS. Started Firefox.
@@ -339,7 +339,7 @@ To re-execute a Ruby model class, with a previously saved walk sequence, run the
 Output may look like the following:
 
 ```bash
-Test Generator has started to replay the walk file /tmp/walk-1608084228.wlk.
+Ruby Test Generator has started to replay the walk file /tmp/walk-1608084228.wlk.
 ELEMENT: v_start
 SUCCESS. Started Firefox.
 ELEMENT: e_main
@@ -496,7 +496,7 @@ ELEMENT: v_contents
 SUCCESS. Arrived at Contents Page.
 ELEMENT: e_contents
 SUCCESS. Browsed to Contents Page.
-Test Generator replayed the walk file in:  29.746819734573364 seconds.
+Ruby Test Generator replayed the walk file in:  29.746819734573364 seconds.
 ```
 
 ## Author

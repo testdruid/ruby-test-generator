@@ -4,7 +4,7 @@
 # It uses GraphWalker to generate test sequences and inputs.
 # It can execute a method in a Ruby model class file for each element.
 # The element names in the model file, and the model class file must match exactly.
-# The Test Generator stops when edge coverage has been reached, or no next element is available.
+# The Ruby Test Generator stops when edge coverage has been reached, or no next element is available.
 
 require "json"
 require "optparse"
@@ -123,7 +123,7 @@ module RubyTestGenerator
   # Run from a walk file
   # @param walk_file_path [String] - Path to the walk file to be run
   def self.run_from_walk_file(options)
-    puts "Test Generator has started to replay the walk file #{options[:walk]}."
+    puts "Ruby Test Generator has started to replay the walk file #{options[:walk]}."
     startTime = Time.now.to_f
 
     walk_file_path = options[:walk]
@@ -149,7 +149,7 @@ module RubyTestGenerator
     endTime = Time.now.to_f
     elapsedTime = endTime - startTime
 
-    puts "Test Generator replayed the walk file in:  #{elapsedTime} seconds."
+    puts "Ruby Test Generator replayed the walk file in:  #{elapsedTime} seconds."
     puts ""
 
     return "COMPLETED"
@@ -170,13 +170,13 @@ module RubyTestGenerator
     if(options[:url])
       base_url = options[:url]
     end
-    puts "Test Generator is using GraphWalker REST API at #{base_url}."
+    puts "Ruby Test Generator is using GraphWalker REST API at #{base_url}."
 
     # Load the GraphWalker model
     if(options[:json])
       model_json_file_full = File.join (options[:json])
       load_model_json(options[:json], base_url)
-      puts "Test Generator has loaded a JSON model into GraphWalker."
+      puts "Ruby Test Generator has loaded a JSON model into GraphWalker."
     end
 
     puts "GraphWalker is starting its walk."
