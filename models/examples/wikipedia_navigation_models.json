@@ -4,7 +4,7 @@
 		{
 			"name": "wikipedia_navigation",
 			"generator": "quick_random(edge_coverage(100) && vertex_coverage(100))",
-			"startElementId": "v3",
+			"startElementId": "v0",
 			"vertices": [
 				{
 					"id": "v3",
@@ -22,9 +22,9 @@
 				},
 				{
 					"id": "v5",
-					"name": "v_portal_contents",
+					"name": "v_contents",
 					"properties": {
-						"description": "http://en.wikipedia.org/wiki/Portal:Contents"
+						"description": "http://en.wikipedia.org/wiki/Wikipedia:Contents"
 					}
 				},
 				{
@@ -40,6 +40,10 @@
 					"properties": {
 						"description": "http://en.wikipedia.org/wiki/Special:Recentchanges"
 					}
+				},
+				{
+					"id": "v0",
+					"name": "v_start"
 				}
 			],
 			"edges": [
@@ -69,13 +73,13 @@
 				},
 				{
 					"id": "e6",
-					"name": "e_portal",
+					"name": "e_contents",
 					"sourceVertexId": "v3",
 					"targetVertexId": "v5"
 				},
 				{
 					"id": "e7",
-					"name": "e_portal",
+					"name": "e_contents",
 					"sourceVertexId": "v4",
 					"targetVertexId": "v5"
 				},
@@ -87,7 +91,7 @@
 				},
 				{
 					"id": "e9",
-					"name": "e_portal",
+					"name": "e_contents",
 					"sourceVertexId": "v5",
 					"targetVertexId": "v5"
 				},
@@ -117,13 +121,13 @@
 				},
 				{
 					"id": "e14",
-					"name": "e_portal",
+					"name": "e_contents",
 					"sourceVertexId": "v6",
 					"targetVertexId": "v5"
 				},
 				{
 					"id": "e15",
-					"name": "e_portal",
+					"name": "e_contents",
 					"sourceVertexId": "v3",
 					"targetVertexId": "v5"
 				},
@@ -153,7 +157,7 @@
 				},
 				{
 					"id": "e22",
-					"name": "e_portal",
+					"name": "e_contents",
 					"sourceVertexId": "v7",
 					"targetVertexId": "v5"
 				},
@@ -198,6 +202,12 @@
 					"name": "e_recent",
 					"sourceVertexId": "v6",
 					"targetVertexId": "v7"
+				},
+				{
+					"id": "e0",
+					"name": "e_main",
+					"sourceVertexId": "v0",
+					"targetVertexId": "v3"
 				}
 			]
 		}

@@ -16,6 +16,7 @@ gem install rest-client
 The example Ruby model class wikipedia_navigation_models.rb requires the following Ruby gems:
 ```bash
 gem install watir
+gem install webdrivers
 ```
 
 ## Firefox required
@@ -76,77 +77,80 @@ Output may look like the following:
 Test Generator is using GraphWalker REST API at http://localhost:8887/graphwalker.
 Test Generator has loaded a JSON model into GraphWalker.
 GraphWalker is starting its walk.
+ELEMENT: v_start
+ELEMENT: e_main
+ELEMENT: v_wikipedia_main
+ELEMENT: e_about
+ELEMENT: v_about
+ELEMENT: e_contents
+ELEMENT: v_contents
+ELEMENT: e_main
 ELEMENT: v_wikipedia_main
 ELEMENT: e_recent
 ELEMENT: v_recent_changes
-ELEMENT: e_portal
-ELEMENT: v_portal_contents
+ELEMENT: e_contents
+ELEMENT: v_contents
+ELEMENT: e_recent
+ELEMENT: v_recent_changes
 ELEMENT: e_about
 ELEMENT: v_about
-ELEMENT: e_main
-ELEMENT: v_wikipedia_main
-ELEMENT: e_portal
-ELEMENT: v_portal_contents
 ELEMENT: e_community
 ELEMENT: v_community_portal
 ELEMENT: e_recent
 ELEMENT: v_recent_changes
-ELEMENT: e_about
-ELEMENT: v_about
-ELEMENT: e_portal
-ELEMENT: v_portal_contents
-ELEMENT: e_portal
-ELEMENT: v_portal_contents
 ELEMENT: e_main
 ELEMENT: v_wikipedia_main
-ELEMENT: e_portal
-ELEMENT: v_portal_contents
-ELEMENT: e_community
-ELEMENT: v_community_portal
 ELEMENT: e_community
 ELEMENT: v_community_portal
 ELEMENT: e_main
 ELEMENT: v_wikipedia_main
 ELEMENT: e_about
 ELEMENT: v_about
+ELEMENT: e_main
+ELEMENT: v_wikipedia_main
+ELEMENT: e_recent
+ELEMENT: v_recent_changes
+ELEMENT: e_recent
+ELEMENT: v_recent_changes
+ELEMENT: e_contents
+ELEMENT: v_contents
+ELEMENT: e_about
+ELEMENT: v_about
+ELEMENT: e_main
+ELEMENT: v_wikipedia_main
+ELEMENT: e_contents
+ELEMENT: v_contents
+ELEMENT: e_community
+ELEMENT: v_community_portal
+ELEMENT: e_community
+ELEMENT: v_community_portal
+ELEMENT: e_main
+ELEMENT: v_wikipedia_main
+ELEMENT: e_contents
+ELEMENT: v_contents
+ELEMENT: e_about
+ELEMENT: v_about
+ELEMENT: e_about
+ELEMENT: v_about
+ELEMENT: e_contents
+ELEMENT: v_contents
+ELEMENT: e_about
+ELEMENT: v_about
+ELEMENT: e_recent
+ELEMENT: v_recent_changes
 ELEMENT: e_community
 ELEMENT: v_community_portal
 ELEMENT: e_main
 ELEMENT: v_wikipedia_main
 ELEMENT: e_main
 ELEMENT: v_wikipedia_main
-ELEMENT: e_portal
-ELEMENT: v_portal_contents
-ELEMENT: e_recent
-ELEMENT: v_recent_changes
-ELEMENT: e_main
-ELEMENT: v_wikipedia_main
-ELEMENT: e_recent
-ELEMENT: v_recent_changes
 ELEMENT: e_community
 ELEMENT: v_community_portal
-ELEMENT: e_portal
-ELEMENT: v_portal_contents
-ELEMENT: e_about
-ELEMENT: v_about
-ELEMENT: e_main
-ELEMENT: v_wikipedia_main
-ELEMENT: e_community
-ELEMENT: v_community_portal
-ELEMENT: e_recent
-ELEMENT: v_recent_changes
-ELEMENT: e_recent
-ELEMENT: v_recent_changes
-ELEMENT: e_about
-ELEMENT: v_about
-ELEMENT: e_recent
-ELEMENT: v_recent_changes
-ELEMENT: e_about
-ELEMENT: v_about
-ELEMENT: e_about
+ELEMENT: e_contents
+ELEMENT: v_contents
+ELEMENT: e_contents
 GraphWalker reached 100% edge coverage. Congratulations!
-GraphWalker walked that model in: 68 steps in 0.638038158416748 seconds.
-
+GraphWalker walked that model in: 72 steps in 0.37109804153442383 seconds.
 ```
 
 ## Load a model file into the GraphWalker REST service, execute a Ruby model class, and save the generated sequence to a walk file
@@ -163,316 +167,339 @@ Output may look like the following:
 Test Generator is using GraphWalker REST API at http://localhost:8887/graphwalker.
 Test Generator has loaded a JSON model into GraphWalker.
 GraphWalker is starting its walk.
+ELEMENT: v_start
+SUCCESS. Started Firefox.
+ELEMENT: e_main
+SUCCESS. Browsed to Main Page.
 ELEMENT: v_wikipedia_main
-PENDING: Element method not implemented.
+SUCCESS. Arrived at Main Page.
+ELEMENT: e_contents
+SUCCESS. Browsed to Contents Page.
+ELEMENT: v_contents
+SUCCESS. Arrived at Contents Page.
 ELEMENT: e_about
-PENDING: Element method not implemented.
+SUCCESS. Browsed to About Page.
 ELEMENT: v_about
-PENDING: Element method not implemented.
-ELEMENT: e_about
-PENDING: Element method not implemented.
-ELEMENT: v_about
-PENDING: Element method not implemented.
+SUCCESS. Arrived at About Page.
 ELEMENT: e_recent
-PENDING: Element method not implemented.
+SUCCESS. Browsed to Recent Changes Page.
 ELEMENT: v_recent_changes
-PENDING: Element method not implemented.
+SUCCESS. Arrived at Recent Changes Page.
 ELEMENT: e_community
-PENDING: Element method not implemented.
+SUCCESS. Browsed to Community Portal Page.
 ELEMENT: v_community_portal
-PENDING: Element method not implemented.
+SUCCESS. Arrived at Community Portal Page.
 ELEMENT: e_main
-PENDING: Element method not implemented.
+SUCCESS. Browsed to Main Page.
 ELEMENT: v_wikipedia_main
-PENDING: Element method not implemented.
+SUCCESS. Arrived at Main Page.
 ELEMENT: e_about
-PENDING: Element method not implemented.
+SUCCESS. Browsed to About Page.
 ELEMENT: v_about
-PENDING: Element method not implemented.
-ELEMENT: e_community
-PENDING: Element method not implemented.
-ELEMENT: v_community_portal
-PENDING: Element method not implemented.
-ELEMENT: e_portal
-PENDING: Element method not implemented.
-ELEMENT: v_portal_contents
-PENDING: Element method not implemented.
+SUCCESS. Arrived at About Page.
+ELEMENT: e_contents
+SUCCESS. Browsed to Contents Page.
+ELEMENT: v_contents
+SUCCESS. Arrived at Contents Page.
 ELEMENT: e_about
-PENDING: Element method not implemented.
+SUCCESS. Browsed to About Page.
 ELEMENT: v_about
-PENDING: Element method not implemented.
-ELEMENT: e_portal
-PENDING: Element method not implemented.
-ELEMENT: v_portal_contents
-PENDING: Element method not implemented.
+SUCCESS. Arrived at About Page.
+ELEMENT: e_community
+SUCCESS. Browsed to Community Portal Page.
+ELEMENT: v_community_portal
+SUCCESS. Arrived at Community Portal Page.
+ELEMENT: e_main
+SUCCESS. Browsed to Main Page.
+ELEMENT: v_wikipedia_main
+SUCCESS. Arrived at Main Page.
+ELEMENT: e_community
+SUCCESS. Browsed to Community Portal Page.
+ELEMENT: v_community_portal
+SUCCESS. Arrived at Community Portal Page.
+ELEMENT: e_main
+SUCCESS. Browsed to Main Page.
+ELEMENT: v_wikipedia_main
+SUCCESS. Arrived at Main Page.
+ELEMENT: e_contents
+SUCCESS. Browsed to Contents Page.
+ELEMENT: v_contents
+SUCCESS. Arrived at Contents Page.
 ELEMENT: e_recent
-PENDING: Element method not implemented.
+SUCCESS. Browsed to Recent Changes Page.
 ELEMENT: v_recent_changes
-PENDING: Element method not implemented.
+SUCCESS. Arrived at Recent Changes Page.
 ELEMENT: e_recent
-PENDING: Element method not implemented.
+SUCCESS. Browsed to Recent Changes Page.
 ELEMENT: v_recent_changes
-PENDING: Element method not implemented.
+SUCCESS. Arrived at Recent Changes Page.
+ELEMENT: e_contents
+SUCCESS. Browsed to Contents Page.
+ELEMENT: v_contents
+SUCCESS. Arrived at Contents Page.
+ELEMENT: e_main
+SUCCESS. Browsed to Main Page.
+ELEMENT: v_wikipedia_main
+SUCCESS. Arrived at Main Page.
+ELEMENT: e_community
+SUCCESS. Browsed to Community Portal Page.
+ELEMENT: v_community_portal
+SUCCESS. Arrived at Community Portal Page.
+ELEMENT: e_recent
+SUCCESS. Browsed to Recent Changes Page.
+ELEMENT: v_recent_changes
+SUCCESS. Arrived at Recent Changes Page.
+ELEMENT: e_contents
+SUCCESS. Browsed to Contents Page.
+ELEMENT: v_contents
+SUCCESS. Arrived at Contents Page.
+ELEMENT: e_community
+SUCCESS. Browsed to Community Portal Page.
+ELEMENT: v_community_portal
+SUCCESS. Arrived at Community Portal Page.
+ELEMENT: e_main
+SUCCESS. Browsed to Main Page.
+ELEMENT: v_wikipedia_main
+SUCCESS. Arrived at Main Page.
+ELEMENT: e_main
+SUCCESS. Browsed to Main Page.
+ELEMENT: v_wikipedia_main
+SUCCESS. Arrived at Main Page.
 ELEMENT: e_about
-PENDING: Element method not implemented.
+SUCCESS. Browsed to About Page.
 ELEMENT: v_about
-PENDING: Element method not implemented.
-ELEMENT: e_recent
-PENDING: Element method not implemented.
-ELEMENT: v_recent_changes
-PENDING: Element method not implemented.
-ELEMENT: e_portal
-PENDING: Element method not implemented.
-ELEMENT: v_portal_contents
-PENDING: Element method not implemented.
+SUCCESS. Arrived at About Page.
 ELEMENT: e_main
-PENDING: Element method not implemented.
+SUCCESS. Browsed to Main Page.
 ELEMENT: v_wikipedia_main
-PENDING: Element method not implemented.
-ELEMENT: e_portal
-PENDING: Element method not implemented.
-ELEMENT: v_portal_contents
-PENDING: Element method not implemented.
-ELEMENT: e_main
-PENDING: Element method not implemented.
-ELEMENT: v_wikipedia_main
-PENDING: Element method not implemented.
-ELEMENT: e_portal
-PENDING: Element method not implemented.
-ELEMENT: v_portal_contents
-PENDING: Element method not implemented.
-ELEMENT: e_main
-PENDING: Element method not implemented.
-ELEMENT: v_wikipedia_main
-PENDING: Element method not implemented.
+SUCCESS. Arrived at Main Page.
 ELEMENT: e_community
-PENDING: Element method not implemented.
+SUCCESS. Browsed to Community Portal Page.
 ELEMENT: v_community_portal
-PENDING: Element method not implemented.
-ELEMENT: e_portal
-PENDING: Element method not implemented.
-ELEMENT: v_portal_contents
-PENDING: Element method not implemented.
-ELEMENT: e_portal
-PENDING: Element method not implemented.
-ELEMENT: v_portal_contents
-PENDING: Element method not implemented.
-ELEMENT: e_main
-PENDING: Element method not implemented.
-ELEMENT: v_wikipedia_main
-PENDING: Element method not implemented.
-ELEMENT: e_main
-PENDING: Element method not implemented.
-ELEMENT: v_wikipedia_main
-PENDING: Element method not implemented.
-ELEMENT: e_recent
-PENDING: Element method not implemented.
-ELEMENT: v_recent_changes
-PENDING: Element method not implemented.
-ELEMENT: e_portal
-PENDING: Element method not implemented.
-ELEMENT: v_portal_contents
-PENDING: Element method not implemented.
+SUCCESS. Arrived at Community Portal Page.
 ELEMENT: e_community
-PENDING: Element method not implemented.
+SUCCESS. Browsed to Community Portal Page.
 ELEMENT: v_community_portal
-PENDING: Element method not implemented.
-ELEMENT: e_community
-PENDING: Element method not implemented.
-ELEMENT: v_community_portal
-PENDING: Element method not implemented.
-ELEMENT: e_portal
-PENDING: Element method not implemented.
-ELEMENT: v_portal_contents
-PENDING: Element method not implemented.
+SUCCESS. Arrived at Community Portal Page.
+ELEMENT: e_main
+SUCCESS. Browsed to Main Page.
+ELEMENT: v_wikipedia_main
+SUCCESS. Arrived at Main Page.
 ELEMENT: e_about
-PENDING: Element method not implemented.
+SUCCESS. Browsed to About Page.
 ELEMENT: v_about
-PENDING: Element method not implemented.
-ELEMENT: e_community
-PENDING: Element method not implemented.
-ELEMENT: v_community_portal
-PENDING: Element method not implemented.
-ELEMENT: e_recent
-PENDING: Element method not implemented.
-ELEMENT: v_recent_changes
-PENDING: Element method not implemented.
-ELEMENT: e_main
-PENDING: Element method not implemented.
-ELEMENT: v_wikipedia_main
-PENDING: Element method not implemented.
+SUCCESS. Arrived at About Page.
 ELEMENT: e_about
-PENDING: Element method not implemented.
+SUCCESS. Browsed to About Page.
 ELEMENT: v_about
-PENDING: Element method not implemented.
+SUCCESS. Arrived at About Page.
+ELEMENT: e_recent
+SUCCESS. Browsed to Recent Changes Page.
+ELEMENT: v_recent_changes
+SUCCESS. Arrived at Recent Changes Page.
+ELEMENT: e_about
+SUCCESS. Browsed to About Page.
+ELEMENT: v_about
+SUCCESS. Arrived at About Page.
 ELEMENT: e_main
-PENDING: Element method not implemented.
+SUCCESS. Browsed to Main Page.
+ELEMENT: v_wikipedia_main
+SUCCESS. Arrived at Main Page.
+ELEMENT: e_recent
+SUCCESS. Browsed to Recent Changes Page.
+ELEMENT: v_recent_changes
+SUCCESS. Arrived at Recent Changes Page.
+ELEMENT: e_main
+SUCCESS. Browsed to Main Page.
+ELEMENT: v_wikipedia_main
+SUCCESS. Arrived at Main Page.
+ELEMENT: e_community
+SUCCESS. Browsed to Community Portal Page.
+ELEMENT: v_community_portal
+SUCCESS. Arrived at Community Portal Page.
+ELEMENT: e_contents
+SUCCESS. Browsed to Contents Page.
+ELEMENT: v_contents
+SUCCESS. Arrived at Contents Page.
+ELEMENT: e_contents
+SUCCESS. Browsed to Contents Page.
 GraphWalker reached 100% edge coverage. Congratulations!
-GraphWalker walked that model in: 72 steps in 0.6144037246704102 seconds.
-Saved the walk to the file: /tmp/walk-1608066918.wlk
-
+GraphWalker walked that model in: 78 steps in 28.82793402671814 seconds.
+Saved the walk to the file: /tmp/walk-1608084228.wlk
 ```
 
 ## Execute a Ruby model class from the sequence in a previously saved walk file
 
-To re-execute a Ruby model class, with a previously saved walk sequence, run the following command. Note that the walk file name id randomly generated based on time, so yours will be different.
+To re-execute a Ruby model class, with a previously saved walk sequence, run the following command. Note that the walk file name is randomly generated based on time, so yours will be different.
 
 ```bash
-./ruby_test_generator.rb --walk /tmp/walk-1608066918.wlk --ruby models/examples/wikipedia_navigation_models.rb
+./ruby_test_generator.rb --walk /tmp/walk-1608084228.wlk --ruby models/examples/wikipedia_navigation_models.rb
 ```
 
 Output may look like the following:
 
 ```bash
-Test Generator has started to replay the walk file /tmp/walk-1608066918.wlk.
+Test Generator has started to replay the walk file /tmp/walk-1608084228.wlk.
+ELEMENT: v_start
+SUCCESS. Started Firefox.
+ELEMENT: e_main
+SUCCESS. Browsed to Main Page.
 ELEMENT: v_wikipedia_main
-PENDING: Element method not implemented.
+SUCCESS. Arrived at Main Page.
+ELEMENT: e_contents
+SUCCESS. Browsed to Contents Page.
+ELEMENT: v_contents
+SUCCESS. Arrived at Contents Page.
 ELEMENT: e_about
-PENDING: Element method not implemented.
+SUCCESS. Browsed to About Page.
 ELEMENT: v_about
-PENDING: Element method not implemented.
-ELEMENT: e_about
-PENDING: Element method not implemented.
-ELEMENT: v_about
-PENDING: Element method not implemented.
+SUCCESS. Arrived at About Page.
 ELEMENT: e_recent
-PENDING: Element method not implemented.
+SUCCESS. Browsed to Recent Changes Page.
 ELEMENT: v_recent_changes
-PENDING: Element method not implemented.
+SUCCESS. Arrived at Recent Changes Page.
 ELEMENT: e_community
-PENDING: Element method not implemented.
+SUCCESS. Browsed to Community Portal Page.
 ELEMENT: v_community_portal
-PENDING: Element method not implemented.
+SUCCESS. Arrived at Community Portal Page.
 ELEMENT: e_main
-PENDING: Element method not implemented.
+SUCCESS. Browsed to Main Page.
 ELEMENT: v_wikipedia_main
-PENDING: Element method not implemented.
+SUCCESS. Arrived at Main Page.
 ELEMENT: e_about
-PENDING: Element method not implemented.
+SUCCESS. Browsed to About Page.
 ELEMENT: v_about
-PENDING: Element method not implemented.
-ELEMENT: e_community
-PENDING: Element method not implemented.
-ELEMENT: v_community_portal
-PENDING: Element method not implemented.
-ELEMENT: e_portal
-PENDING: Element method not implemented.
-ELEMENT: v_portal_contents
-PENDING: Element method not implemented.
+SUCCESS. Arrived at About Page.
+ELEMENT: e_contents
+SUCCESS. Browsed to Contents Page.
+ELEMENT: v_contents
+SUCCESS. Arrived at Contents Page.
 ELEMENT: e_about
-PENDING: Element method not implemented.
+SUCCESS. Browsed to About Page.
 ELEMENT: v_about
-PENDING: Element method not implemented.
-ELEMENT: e_portal
-PENDING: Element method not implemented.
-ELEMENT: v_portal_contents
-PENDING: Element method not implemented.
+SUCCESS. Arrived at About Page.
+ELEMENT: e_community
+SUCCESS. Browsed to Community Portal Page.
+ELEMENT: v_community_portal
+SUCCESS. Arrived at Community Portal Page.
+ELEMENT: e_main
+SUCCESS. Browsed to Main Page.
+ELEMENT: v_wikipedia_main
+SUCCESS. Arrived at Main Page.
+ELEMENT: e_community
+SUCCESS. Browsed to Community Portal Page.
+ELEMENT: v_community_portal
+SUCCESS. Arrived at Community Portal Page.
+ELEMENT: e_main
+SUCCESS. Browsed to Main Page.
+ELEMENT: v_wikipedia_main
+SUCCESS. Arrived at Main Page.
+ELEMENT: e_contents
+SUCCESS. Browsed to Contents Page.
+ELEMENT: v_contents
+SUCCESS. Arrived at Contents Page.
 ELEMENT: e_recent
-PENDING: Element method not implemented.
+SUCCESS. Browsed to Recent Changes Page.
 ELEMENT: v_recent_changes
-PENDING: Element method not implemented.
+SUCCESS. Arrived at Recent Changes Page.
 ELEMENT: e_recent
-PENDING: Element method not implemented.
+SUCCESS. Browsed to Recent Changes Page.
 ELEMENT: v_recent_changes
-PENDING: Element method not implemented.
+SUCCESS. Arrived at Recent Changes Page.
+ELEMENT: e_contents
+SUCCESS. Browsed to Contents Page.
+ELEMENT: v_contents
+SUCCESS. Arrived at Contents Page.
+ELEMENT: e_main
+SUCCESS. Browsed to Main Page.
+ELEMENT: v_wikipedia_main
+SUCCESS. Arrived at Main Page.
+ELEMENT: e_community
+SUCCESS. Browsed to Community Portal Page.
+ELEMENT: v_community_portal
+SUCCESS. Arrived at Community Portal Page.
+ELEMENT: e_recent
+SUCCESS. Browsed to Recent Changes Page.
+ELEMENT: v_recent_changes
+SUCCESS. Arrived at Recent Changes Page.
+ELEMENT: e_contents
+SUCCESS. Browsed to Contents Page.
+ELEMENT: v_contents
+SUCCESS. Arrived at Contents Page.
+ELEMENT: e_community
+SUCCESS. Browsed to Community Portal Page.
+ELEMENT: v_community_portal
+SUCCESS. Arrived at Community Portal Page.
+ELEMENT: e_main
+SUCCESS. Browsed to Main Page.
+ELEMENT: v_wikipedia_main
+SUCCESS. Arrived at Main Page.
+ELEMENT: e_main
+SUCCESS. Browsed to Main Page.
+ELEMENT: v_wikipedia_main
+SUCCESS. Arrived at Main Page.
 ELEMENT: e_about
-PENDING: Element method not implemented.
+SUCCESS. Browsed to About Page.
 ELEMENT: v_about
-PENDING: Element method not implemented.
-ELEMENT: e_recent
-PENDING: Element method not implemented.
-ELEMENT: v_recent_changes
-PENDING: Element method not implemented.
-ELEMENT: e_portal
-PENDING: Element method not implemented.
-ELEMENT: v_portal_contents
-PENDING: Element method not implemented.
+SUCCESS. Arrived at About Page.
 ELEMENT: e_main
-PENDING: Element method not implemented.
+SUCCESS. Browsed to Main Page.
 ELEMENT: v_wikipedia_main
-PENDING: Element method not implemented.
-ELEMENT: e_portal
-PENDING: Element method not implemented.
-ELEMENT: v_portal_contents
-PENDING: Element method not implemented.
-ELEMENT: e_main
-PENDING: Element method not implemented.
-ELEMENT: v_wikipedia_main
-PENDING: Element method not implemented.
-ELEMENT: e_portal
-PENDING: Element method not implemented.
-ELEMENT: v_portal_contents
-PENDING: Element method not implemented.
-ELEMENT: e_main
-PENDING: Element method not implemented.
-ELEMENT: v_wikipedia_main
-PENDING: Element method not implemented.
+SUCCESS. Arrived at Main Page.
 ELEMENT: e_community
-PENDING: Element method not implemented.
+SUCCESS. Browsed to Community Portal Page.
 ELEMENT: v_community_portal
-PENDING: Element method not implemented.
-ELEMENT: e_portal
-PENDING: Element method not implemented.
-ELEMENT: v_portal_contents
-PENDING: Element method not implemented.
-ELEMENT: e_portal
-PENDING: Element method not implemented.
-ELEMENT: v_portal_contents
-PENDING: Element method not implemented.
-ELEMENT: e_main
-PENDING: Element method not implemented.
-ELEMENT: v_wikipedia_main
-PENDING: Element method not implemented.
-ELEMENT: e_main
-PENDING: Element method not implemented.
-ELEMENT: v_wikipedia_main
-PENDING: Element method not implemented.
-ELEMENT: e_recent
-PENDING: Element method not implemented.
-ELEMENT: v_recent_changes
-PENDING: Element method not implemented.
-ELEMENT: e_portal
-PENDING: Element method not implemented.
-ELEMENT: v_portal_contents
-PENDING: Element method not implemented.
+SUCCESS. Arrived at Community Portal Page.
 ELEMENT: e_community
-PENDING: Element method not implemented.
+SUCCESS. Browsed to Community Portal Page.
 ELEMENT: v_community_portal
-PENDING: Element method not implemented.
-ELEMENT: e_community
-PENDING: Element method not implemented.
-ELEMENT: v_community_portal
-PENDING: Element method not implemented.
-ELEMENT: e_portal
-PENDING: Element method not implemented.
-ELEMENT: v_portal_contents
-PENDING: Element method not implemented.
+SUCCESS. Arrived at Community Portal Page.
+ELEMENT: e_main
+SUCCESS. Browsed to Main Page.
+ELEMENT: v_wikipedia_main
+SUCCESS. Arrived at Main Page.
 ELEMENT: e_about
-PENDING: Element method not implemented.
+SUCCESS. Browsed to About Page.
 ELEMENT: v_about
-PENDING: Element method not implemented.
-ELEMENT: e_community
-PENDING: Element method not implemented.
-ELEMENT: v_community_portal
-PENDING: Element method not implemented.
-ELEMENT: e_recent
-PENDING: Element method not implemented.
-ELEMENT: v_recent_changes
-PENDING: Element method not implemented.
-ELEMENT: e_main
-PENDING: Element method not implemented.
-ELEMENT: v_wikipedia_main
-PENDING: Element method not implemented.
+SUCCESS. Arrived at About Page.
 ELEMENT: e_about
-PENDING: Element method not implemented.
+SUCCESS. Browsed to About Page.
 ELEMENT: v_about
-PENDING: Element method not implemented.
+SUCCESS. Arrived at About Page.
+ELEMENT: e_recent
+SUCCESS. Browsed to Recent Changes Page.
+ELEMENT: v_recent_changes
+SUCCESS. Arrived at Recent Changes Page.
+ELEMENT: e_about
+SUCCESS. Browsed to About Page.
+ELEMENT: v_about
+SUCCESS. Arrived at About Page.
 ELEMENT: e_main
-PENDING: Element method not implemented.
-Test Generator replayed the walk file in:  0.14868497848510742 seconds.
+SUCCESS. Browsed to Main Page.
+ELEMENT: v_wikipedia_main
+SUCCESS. Arrived at Main Page.
+ELEMENT: e_recent
+SUCCESS. Browsed to Recent Changes Page.
+ELEMENT: v_recent_changes
+SUCCESS. Arrived at Recent Changes Page.
+ELEMENT: e_main
+SUCCESS. Browsed to Main Page.
+ELEMENT: v_wikipedia_main
+SUCCESS. Arrived at Main Page.
+ELEMENT: e_community
+SUCCESS. Browsed to Community Portal Page.
+ELEMENT: v_community_portal
+SUCCESS. Arrived at Community Portal Page.
+ELEMENT: e_contents
+SUCCESS. Browsed to Contents Page.
+ELEMENT: v_contents
+SUCCESS. Arrived at Contents Page.
+ELEMENT: e_contents
+SUCCESS. Browsed to Contents Page.
+Test Generator replayed the walk file in:  29.746819734573364 seconds.
 ```
 
-## Contact
+## Author
 Ruby Test Generator was created by Chris Struble.
 
 Github profile: https://github.com/testdruid/
